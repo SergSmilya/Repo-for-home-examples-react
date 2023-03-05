@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SergSmilya/Repo-for-home-examples-react/static/css/main.7acaea2f.css",
+    "main.js": "/SergSmilya/Repo-for-home-examples-react/static/js/main.07d3183d.js",
+    "index.html": "/SergSmilya/Repo-for-home-examples-react/index.html",
+    "main.7acaea2f.css.map": "/SergSmilya/Repo-for-home-examples-react/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/SergSmilya/Repo-for-home-examples-react/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
