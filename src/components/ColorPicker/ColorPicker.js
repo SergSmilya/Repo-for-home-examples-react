@@ -13,6 +13,9 @@ const colorPickerOptions = [
 export default class ColorPicker extends Component {
   state = {
     activeIdx: 1,
+    startValue: 'Hello',
+    name: '',
+    tag: '',
   };
 
   setActiveIdx = i => {
@@ -30,6 +33,16 @@ export default class ColorPicker extends Component {
     return activeClass.join(' ');
   };
 
+  changeValue = e => {
+    this.setState({ [e.currentTarget.name]: e.currentTarget.value });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+
+    console.log(this.state);
+  };
+
   render() {
     return (
       <div className="ColorPicker">
@@ -45,6 +58,28 @@ export default class ColorPicker extends Component {
             ></button>
           ))}
         </div>
+
+        <form onSubmit={this.handleSubmit}>
+          <label>
+            <input
+              type="text"
+              name="name"
+              value={this.state.name}
+              onChange={this.changeValue}
+            />
+          </label>
+
+          <label>
+            <input
+              type="text"
+              name="tag"
+              value={this.state.tag}
+              onChange={this.changeValue}
+            />
+          </label>
+
+          <button type="submit">Send</button>
+        </form>
       </div>
     );
   }
